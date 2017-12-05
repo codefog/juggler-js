@@ -1,0 +1,59 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #393939;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem;
+    background: rgb(226, 7, 15);
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 900px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test {
+    padding: 1rem 0;
+}
+
+.test:not(:last-child) {
+    border-bottom: 1px dashed #b4b4b5;
+}
+
+.test-element {
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    background: #393939;
+    color: #fff;
+}
+
+.test-element--alt {
+    color: #393939;
+    background: #b4b4b5;
+}
