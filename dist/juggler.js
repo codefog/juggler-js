@@ -4,16 +4,16 @@
     window.initJuggler = function () {
         var registry = [];
 
-        Array.from(document.querySelectorAll('[data-juggler-target]')).forEach(function (juggler) {
+        Array.prototype.slice.call(document.querySelectorAll('[data-juggler-target]')).forEach(function (juggler) {
             var target = juggler.dataset.jugglerTarget;
             var els = document.querySelectorAll('[data-juggler-source="' + target + '"]');
 
-            // Throw an error if the element has been not found
+            // Throw an error if the source element has been not found
             if (els.length === 0) {
                 throw new Error('The element source "' + target + '" does not exist.');
             }
 
-            // Throw an error if the number of elements is
+            // Throw an error if the number of source elements is bigger than one
             if (els.length > 1) {
                 throw new Error('The element source "' + target + '" is not unique. ' + els.length + ' elements have been found.');
             }

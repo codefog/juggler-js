@@ -4,7 +4,7 @@
     window.initJuggler = function () {
         var registry = [];
 
-        Array.from(document.querySelectorAll('[data-juggler-target]')).forEach(function (juggler) {
+        Array.prototype.slice.call(document.querySelectorAll('[data-juggler-target]')).forEach(function (juggler) {
             var target = juggler.dataset.jugglerTarget;
             var els = document.querySelectorAll('[data-juggler-source="' + target + '"]');
 
