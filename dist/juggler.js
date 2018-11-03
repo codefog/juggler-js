@@ -58,6 +58,7 @@
 
         /**
          * Initialize the Juggler
+         * @returns {void}
          */
         init: function () {
             Array.prototype.slice.call(document.querySelectorAll('[data-juggler-target]')).forEach(function (targetElement) {
@@ -107,8 +108,9 @@
 
         /**
          * Set the flag value
-         * @param {String} name
-         * @param {Boolean} value
+         * @param {String} name Flag name
+         * @param {Boolean} value Flag value (true or false)
+         * @returns {void}
          */
         setFlag: function (name, value) {
             this.flags[name] = !!value;
@@ -117,8 +119,8 @@
 
         /**
          * Get the flag value
-         * @param {String} name
-         * @returns {Boolean}
+         * @param {String} name Flag name
+         * @returns {Boolean} Flag value (true or false)
          */
         getFlag: function (name) {
             if (!this.flags.hasOwnProperty(name)) {
