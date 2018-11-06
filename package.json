@@ -1,6 +1,6 @@
 {
     "name": "juggler-js",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "main": "dist/juggler.js",
     "description": "Juggler is a simple tool that allows to move (not copy!) the element nodes from one place to another in the DOM when they match the provided media query.",
     "repository": {
